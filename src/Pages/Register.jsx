@@ -87,7 +87,7 @@ const RegisterPage = () => {
           </button>
         </form>
 
-        {/* Login Link */}
+      
         <p className="text-center text-gray-600 mt-4">
           Already have an account?{" "}
           <Link to="/login" className="text-black font-medium">Sign In</Link>

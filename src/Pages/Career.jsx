@@ -33,7 +33,7 @@ const Career = () => {
           </form>
         </div>
 
-        {/* Image Section */}
+        
        
       </div>
     </div>
