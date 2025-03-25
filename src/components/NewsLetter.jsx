@@ -1,3 +1,5 @@
+import React from "react";
+
 const Newsletter = () => {
     return (
       <div className=" p-6 text-black mx-auto rounded-lg">
