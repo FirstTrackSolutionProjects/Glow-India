@@ -7,7 +7,7 @@ const testimonials = [
     review:
       "The apartment is spacious, well-designed, and located in a prime area. The quality of construction is outstanding, and the amenities are top-notch!",
     name: "Rahul Sharma",
-    avatar: "/avatars/rahul.jpg",
+    avatar: "/Bavatar.jpg",
     rating: 5,
   },
   {
@@ -15,7 +15,7 @@ const testimonials = [
     review:
       "Glow India made my dream of owning a villa come true! The locality is amazing, and the greenery around adds to the charm. A great investment!",
     name: "Sneha Verma",
-    avatar: "/avatars/sneha.jpg",
+    avatar: "/Gavatar.jpg",
     rating: 4.5,
   },
   {
@@ -23,7 +23,7 @@ const testimonials = [
     review:
       "I purchased a 2BHK flat from Glow India, and I must say the process was seamless. The team was very supportive, and the property value is already appreciating!",
     name: "Amit Das",
-    avatar: "/avatars/amit.jpg",
+    avatar: "/Bavatar.jpg",
     rating: 4,
   },
   {
@@ -31,7 +31,7 @@ const testimonials = [
     review:
       "Perfect location for my office! The building is modern, well-equipped, and has excellent connectivity. Highly recommend Glow India for commercial investments!",
     name: "Priyanka Sinha",
-    avatar: "/avatars/priyanka.jpg",
+    avatar: "/Gavatar.jpg",
     rating: 5,
   },
   {
@@ -39,7 +39,7 @@ const testimonials = [
     review:
       "I moved into my new duplex, and I am extremely satisfied with the construction quality and the peaceful environment. A great decision!",
     name: "Vikram Rao",
-    avatar: "/avatars/vikram.jpg",
+    avatar: "/Bavatars.jpg",
     rating: 4.5,
   },
 ];

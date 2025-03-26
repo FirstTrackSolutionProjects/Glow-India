@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function PrivacyPolicy() {
   return (
     <div className="max-w-4xl mx-auto p-6">
@@ -47,7 +49,7 @@ export default function PrivacyPolicy() {
       <h2 className="text-2xl font-semibold mt-6">5. Your Rights</h2>
       <p className="mt-2">
         You have the right to request access to your personal data, ask for corrections, or request data deletion. To
-        do so, contact us at <span className="text-blue-500">privacy@glowindia.com</span>.
+        do so, contact us at <span className="text-blue-500">info@glowindia.co.in</span>
       </p>
 
       <h2 className="text-2xl font-semibold mt-6">6. Updates to This Policy</h2>

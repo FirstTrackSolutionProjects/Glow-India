@@ -10,7 +10,7 @@ const Footer = () => {
         {/* Logo Section */}
         <div className="flex items-center space-x-4">
           <Link to="/" className="flex-shrink-0">
-            <img src="assets/logo.jpg" alt="Logo" className="h-20 w-auto object-contain" />
+            <img src="/assets/logo.jpg" alt="Logo" className="h-20 w-auto object-contain" />
           </Link>
           <div>
             <h1 className="text-2xl font-bold drop-shadow-lg">

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const properties = [
   { name: "Apartment", image: "/assets/apartment.jpg", id: "apartment" },
-  { name: "Bungalow", image: "/assets/bungalow.jpg", id: "bungalow" },
+  { name: "Cottage", image: "/assets/cottage.jpg", id: "cottage" },
   { name: "Duplex", image: "/assets/duplex.jpg", id: "duplex" },
   { name: "Simplex", image: "/assets/simplex.jpg", id: "simplex" },
   { name: "Land/Plot", image: "/assets/land.jpg", id: "land" },

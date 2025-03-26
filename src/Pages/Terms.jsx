@@ -46,7 +46,7 @@ const Terms = () => {
       <h2 className="text-xl font-semibold mb-2">6. Contact Us</h2>
       <p className="mb-4">
         If you have any questions about these terms, please contact us at
-        support@example.com.
+        info@glowindia.co.in
       </p>
 
       <p className="text-sm text-gray-500">Last updated: March 2025</p>
