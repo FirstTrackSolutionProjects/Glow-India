@@ -2,40 +2,71 @@ import React from "react";
 
 const Career = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-100 p-4">
-      <div className="bg-white p-6 shadow-lg rounded-lg flex max-w-4xl w-full">
-        {/* Form Section */}
-        <div className="w-1/2 p-4">
-          <h2 className="text-2xl font-bold mb-4">Apply Now</h2>
-          <form className="space-y-4">
-            <div className="flex space-x-2">
-              <input type="text" placeholder="First Name *" className="w-1/2 p-2 border rounded" />
-              <input type="text" placeholder="Last Name *" className="w-1/2 p-2 border rounded" />
-            </div>
-            <input type="email" placeholder="Email Address *" className="w-full p-2 border rounded" />
-            <input type="text" placeholder="Contact No" className="w-full p-2 border rounded" />
-            <div className="flex space-x-2">
-              <input type="text" placeholder="City" className="w-1/2 p-2 border rounded" />
-              <input type="text" placeholder="State/Province" className="w-1/2 p-2 border rounded" />
-            </div>
-            <input type="text" placeholder="ZIP / Postal Code" className="w-full p-2 border rounded" />
-            <select className="w-full p-2 border rounded">
-              <option>Highest Qualification</option>
-              <option>10th</option>
-              <option>12th</option>
-              <option>Graduate</option>
-              <option>Post Graduate</option>
-            </select>
-            <div className="border-dashed border-2 border-gray-400 p-4 rounded text-center">
-              <p>Drag and Drop (or) <span className="text-blue-500 cursor-pointer">Choose Files</span></p>
-            </div>
-            <button className="bg-green-500 text-white py-2 px-4 rounded">APPLY NOW</button>
-          </form>
+    <div className="max-w-3xl mx-auto p-6 bg-white shadow-lg rounded-lg">
+      <h2 className="text-2xl font-bold text-gray-800 text-center mb-6">Apply Now</h2>
+
+      <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
+       
+        <input
+          type="text"
+          placeholder="First Name *"
+          className="border border-gray-300 p-3 rounded-md w-full"
+        />
+        <input
+          type="text"
+          placeholder="Last Name *"
+          className="border border-gray-300 p-3 rounded-md w-full"
+        />
+
+       
+        <input
+          type="email"
+          placeholder="Email Address *"
+          className="border border-gray-300 p-3 rounded-md w-full col-span-1 md:col-span-2"
+        />
+        <input
+          type="text"
+          placeholder="Contact No"
+          className="border border-gray-300 p-3 rounded-md w-full col-span-1 md:col-span-2"
+        />
+
+        
+        <input
+          type="text"
+          placeholder="City"
+          className="border border-gray-300 p-3 rounded-md w-full"
+        />
+        <input
+          type="text"
+          placeholder="State/Province"
+          className="border border-gray-300 p-3 rounded-md w-full"
+        />
+
+       
+        <input
+          type="text"
+          placeholder="ZIP / Postal Code"
+          className="border border-gray-300 p-3 rounded-md w-full col-span-1 md:col-span-2"
+        />
+
+       
+        <select className="border border-gray-300 p-3 rounded-md w-full col-span-1 md:col-span-2">
+          <option>Highest Qualification</option>
+          <option>Bachelor's Degree</option>
+          <option>Master's Degree</option>
+          <option>PhD</option>
+        </select>
+
+       
+        <div className="border-2 border-dashed border-gray-400 p-4 rounded-md text-center col-span-1 md:col-span-2">
+          <p className="text-gray-500">Drag and Drop (or) <span className="text-blue-600 cursor-pointer">Choose Files</span></p>
         </div>
 
         
-       
-      </div>
+        <button className="w-full md:w-auto bg-emerald-800 hover:bg-rose-900 text-white font-semibold py-3 px-6 rounded-md col-span-1 md:col-span-2">
+          APPLY NOW
+        </button>
+      </form>
     </div>
   );
 };

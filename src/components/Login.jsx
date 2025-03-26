@@ -19,7 +19,7 @@ const Login = () => {
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
-      <div className="bg-white p-8 rounded-lg shadow-lg w-96 text-center">
+      <div className="bg-white p-8 rounded-lg shadow-lg w-100 text-center">
         <h2 className="text-2xl font-bold mb-6">Sign in</h2>
         <form onSubmit={handleLogin}>
           <div className="mb-4 text-left">
@@ -58,7 +58,7 @@ const Login = () => {
 
           <button
             type="submit"
-            className="w-full bg-black text-white py-3 rounded-lg text-lg font-semibold hover:opacity-80 transition"
+            className="w-full bg-rose-900 text-white py-3 rounded-lg text-lg font-semibold hover:opacity-80 transition"
           >
             Sign in
           </button>

@@ -4,8 +4,8 @@ import Navbar from "./components/Navbar";
 import SidebarMenu from "./components/SidebarMenu";
 import Footer from "./components/Footer";
 import Home from "./Pages/Home";  // ✅ Add this import
-
 import PropertyDetails from "./Pages/PropertyDetails";
+
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Blog from "./Pages/Blog";
@@ -23,7 +23,7 @@ function App() {
     <>
       <Navbar toggleSidebar={toggleSidebar} />
       <SidebarMenu isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
-
+     
       <Routes>
       <Route path="/" element={<Home />} />
         <Route path="/property/:id" element={<PropertyDetails />} />
@@ -36,7 +36,7 @@ function App() {
         <Route path="/terms" element={<Terms />} />
         <Route path="/privacy" element={<Privacy />} />
       </Routes>
-
+     
       <Footer />
     </>
   );

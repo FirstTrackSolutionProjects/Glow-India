@@ -14,7 +14,7 @@ const Navbar = () => {
     <header className="bg-gradient-to-r from-rose-200  to-rose-400  text-white shadow-lg animate-gradient-x mb-6">
       <div className="container mx-auto flex justify-between items-center p-4">
         <div className="flex items-center space-x-4">
-          <img src="/assets/logo.png" alt="Logo" className="h-16 w-auto object-cover text-4xl font-bold border-4 border-black -ml-2" />
+          <img src="/assets/logo.jpg" alt="Logo" className="h-16 w-auto object-cover text-4xl font-bold border-4 border-black -ml-2" />
           <h1 className="text-2xl font-bold drop-shadow-lg mt-6">
              <span className="text-blue-800">GLOW</span> <span className="text-black">INDIA</span>
           </h1>

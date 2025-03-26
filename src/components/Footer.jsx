@@ -4,13 +4,13 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from "re
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-blue-100 to-blue-200 text-gray-800 py-10">
+    <footer className="bg-gradient-to-r from-blue-100 to-blue-200 text-gray-800 py-10 mt-4">
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 items-center gap-6">
         
         {/* Logo Section */}
         <div className="flex items-center space-x-4">
           <Link to="/" className="flex-shrink-0">
-            <img src="assets/logo.png" alt="Logo" className="h-20 w-auto object-contain" />
+            <img src="assets/logo.jpg" alt="Logo" className="h-20 w-auto object-contain" />
           </Link>
           <div>
             <h1 className="text-2xl font-bold drop-shadow-lg">
@@ -37,9 +37,12 @@ const Footer = () => {
 
         {/* Contact Information */}
         <div>
-          <ul className="space-y-2 text-sm">
+        <h1 className="text-2xl font-bold drop-shadow-lg">
+              <span className="text-blue-800">GLOW</span> <span className="text-black">INDIA</span> <span className="text-gray-700 block md:inline">CORPORATE OFFICE</span>
+            </h1>
+          <ul className="space-y-2 text-sm mt-3">
             <li className="flex items-center"><span className="mr-2">📞</span> +91 9439565249 / 9337545049</li>
-            <li className="flex items-center"><span className="mr-2">📧</span> info@GlowIndia.in</li>
+            <li className="flex items-center"><span className="mr-2">📧</span> info@GlowIndia.co.in</li>
             <li className="flex items-center"><span className="mr-2">📍</span> CHP -29/30, Kanan Vihar, Phase 1, Patia, Bhubaneswar, Odisha -751002</li>
           </ul>
         </div>
