@@ -11,8 +11,8 @@ const Navbar = () => {
   };
 
   return (
-    <header className="bg-gradient-to-r from-rose-200  to-rose-400  text-white shadow-lg animate-gradient-x mb-6">
-      <div className="container mx-auto flex justify-between items-center p-4">
+    <header className="bg-gradient-to-r from-rose-200  to-rose-400  text-white shadow-lg animate-gradient-x mb-6 ">
+      <div className="container mx-auto flex justify-between items-center p-4 ">
         <div className="flex items-center space-x-4">
           <img src="/assets/logo.jpg" alt="Logo" className="h-16 w-auto object-cover text-4xl font-bold border-4 border-black -ml-2" />
           <h1 className="text-2xl font-bold drop-shadow-lg mt-6">
@@ -21,7 +21,15 @@ const Navbar = () => {
 
         </div>
         <nav className="space-x-6 hidden md:flex items-center">
-          <Link to="/" className="hover:text-gray-200">Home</Link>
+        <button
+            onClick={() => {
+              navigate('/');
+              toggleSidebar();
+            }}
+            className="block w-full text-left cursor-pointer"
+          >
+            Home
+          </button>
           <Link to="/about" className="hover:text-gray-200">About</Link>
 
           {/* Properties Dropdown */}
@@ -29,7 +37,7 @@ const Navbar = () => {
             <button className="hover:text-gray-200 flex items-center space-x-1">
               <span>Properties</span> <FaChevronDown />
             </button>
-            <div className="absolute left-0 mt-1 bg-blue-700 text-white rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div className="absolute left-0 mt-1 bg-blue-700 text-white rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-50">
               <Link to="/simplex" className="block px-4 py-2 hover:bg-blue-800">Simplex</Link>
               <Link to="/duplex" className="block px-4 py-2 hover:bg-blue-800">Duplex</Link>
               <Link to="/bungalow" className="block px-4 py-2 hover:bg-blue-800">Bungalow</Link>
@@ -38,8 +46,8 @@ const Navbar = () => {
           </div>
 
           {/* Location Dropdown */}
-          <div className="relative group">
-            <button className="hover:text-gray-200 flex items-center space-x-1">
+          <div className="relative group z-50">
+            <button className="hover:text-gray-200 flex items-center space-x-1 ">
               <span>Location</span> <FaChevronDown />
             </button>
             <div className="absolute left-0 mt-1 bg-blue-700 text-white rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -52,8 +60,8 @@ const Navbar = () => {
           <Link to="/blog" className="hover:text-gray-200">Blog</Link>
 
           {/* Events Dropdown */}
-          <div className="relative group">
-            <button className="hover:text-gray-200 flex items-center space-x-1">
+          <div className="relative group z-50">
+            <button className="hover:text-gray-200 flex items-center space-x-1 ">
               <span>Events</span> <FaChevronDown />
             </button>
             <div className="absolute left-0 mt-1 bg-blue-700 text-white rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">

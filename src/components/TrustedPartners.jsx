@@ -4,12 +4,15 @@ import 'swiper/css/pagination';
 import { Autoplay } from 'swiper/modules';
 
 const partners = [
-  { name: 'Glow India', logo: '/assets/glow india.jpg' },
+  // { name: 'Glow India', logo: '/assets/glow india.jpg' },
   { name: 'Zoho', logo: '/assets/zoho.jpg' },
-  { name: 'Hostinger', logo: '/assets/hostinger.jpg' },
+ { name: 'Hostinger', logo: '/assets/hostinger.jpg' },
   { name: 'AWs', logo: '/assets/aws.jpg' },
-  { name: 'Glow India', logo: '/assets/glow india.jpg' },
-];
+  { name: 'Zoho', logo: '/assets/zoho.jpg' },
+ { name: 'Hostinger', logo: '/assets/hostinger.jpg' },
+  { name: 'AWs', logo: '/assets/aws.jpg' },
+//   { name: 'Glow India', logo: '/assets/glow india.jpg' },
+ ];
 
 const TrustedPartners = () => {
   return (
