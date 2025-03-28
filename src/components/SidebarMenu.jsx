@@ -53,9 +53,9 @@ const SidebarMenu = ({ isOpen, toggleSidebar }) => {
         ))}
 
          {/* Dropdown: Properties */}
-        <li className="hover:bg-yellow-200 p-2 rounded transition duration-300">
+        <li className="transition duration-300">
          <div
-          className="flex justify-between items-center cursor-pointer"
+          className="flex justify-between items-center cursor-pointer p-2 hover:bg-yellow-200 rounded"
           onClick={() => toggleDropdown("Properties")}
           >
           Properties{" "}
@@ -71,7 +71,7 @@ const SidebarMenu = ({ isOpen, toggleSidebar }) => {
         (item) => (
           <li
             key={item}
-            className="hover:bg-gray-200 p-2 rounded transition duration-300"
+            className="hover:bg-gray-500 p-2 rounded transition duration-300"
           >
             <Link
               to={`/property/${item.toLowerCase().replace(" ", "-")}`}
@@ -89,14 +89,14 @@ const SidebarMenu = ({ isOpen, toggleSidebar }) => {
 
 
         {/* Dropdown: Location */}
-        <li className="hover:bg-yellow-200 p-2 rounded transition duration-300">
-          <div className="flex justify-between items-center cursor-pointer" onClick={() => toggleDropdown('Location')}>
+        <li className="transition duration-300">
+          <div className="flex justify-between items-center cursor-pointer hover:bg-yellow-200 p-2 rounded" onClick={() => toggleDropdown('Location')}>
             Location <FaChevronDown className={`${activeDropdown === 'Location' ? 'rotate-180' : ''} transition-transform duration-300`} />
           </div>
           {activeDropdown === 'Location' && (
             <ul className="pl-4 mt-2 space-y-1 transition-all duration-300 ease-in-out">
               {['Puri', 'Cuttack', 'Bhubaneswar'].map((item) => (
-                <li key={item} className="hover:bg-gray-200 p-2 rounded transition duration-300">
+                <li key={item} className="hover:bg-gray-500 p-2 rounded transition duration-300">
                   <Link
                     to={`/${item.toLowerCase().replace(' ', '-')}`}
                     onClick={toggleSidebar}
@@ -118,14 +118,14 @@ const SidebarMenu = ({ isOpen, toggleSidebar }) => {
         </li>
 
         {/* Dropdown: Events */}
-        <li className="hover:bg-yellow-200 p-2 rounded transition duration-300">
-          <div className="flex justify-between items-center cursor-pointer" onClick={() => toggleDropdown('Event')}>
+        <li className="transition duration-300">
+          <div className="flex justify-between items-center cursor-pointer hover:bg-yellow-200 p-2 rounded" onClick={() => toggleDropdown('Event')}>
             Event <FaChevronDown className={`${activeDropdown === 'Event' ? 'rotate-180' : ''} transition-transform duration-300`} />
           </div>
           {activeDropdown === 'Event' && (
             <ul className="pl-4 mt-2 space-y-1 transition-all duration-300 ease-in-out">
               {['Upcoming Event', 'Past Event'].map((item) => (
-                <li key={item} className="hover:bg-gray-200 p-2 rounded transition duration-300">
+                <li key={item} className="hover:bg-gray-500 p-2 rounded transition duration-300">
                   <Link
                     to={`/${item.toLowerCase().replace(' ', '-')}`}
                     onClick={toggleSidebar}
@@ -139,20 +139,20 @@ const SidebarMenu = ({ isOpen, toggleSidebar }) => {
           )}
         </li>
 
-        {/* Dropdown: Upcoming Projects */}
-        <li className="hover:bg-yellow-200 p-2 rounded transition duration-300">
+        {/* Dropdown: Projects */}
+        <li className="transition duration-300">
       <div
-        className="flex justify-between items-center cursor-pointer"
+        className="flex justify-between items-center cursor-pointer hover:bg-yellow-200 p-2 rounded"
          onClick={() => toggleDropdown('Projects')}
       >
         Projects
         <FaChevronDown
-          className={`${activeDropdown === 'Projects' ?     'rotate-180' : ''} transition-transform     duration-300`}
+          className={`${activeDropdown === 'Projects' ?'rotate-180' : ''} transition-transform duration-300`}
         />
             </div>
       {activeDropdown === 'Projects' && (
         <ul className="pl-4 mt-2 space-y-1 transition-all duration-300 ease-in-out">
-          <li className="hover:bg-gray-200 p-2 rounded transition duration-300">
+          <li className="hover:bg-gray-500 p-2 rounded transition duration-300">
             <Link to="/current-projects" onClick=   {toggleSidebar} className="block w-full">
               Current Projects
             </Link>

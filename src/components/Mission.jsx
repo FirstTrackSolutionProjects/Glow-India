@@ -9,7 +9,7 @@ export default function Mission() {
          
           <div className="bg-white p-4 rounded-lg shadow-lg">
             <img
-              src="/assets/mission-1.jpg"
+              src="/assets/mission 1.jpg"
               alt="Building"
               className="w-full h-64 object-cover rounded"
             />
@@ -22,7 +22,7 @@ export default function Mission() {
           
           <div className="bg-white p-4 rounded-lg shadow-lg">
             <img
-              src="/assets/mission-2.jpg"
+              src="/assets/mission 2.jpg"
               alt="3BHK Apartment"
               className="w-full h-64 object-cover rounded"
             />
