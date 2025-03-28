@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaBars, FaChevronDown } from "react-icons/fa";
 import SidebarMenu from "./SidebarMenu";
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
+  const navigate = useNavigate();
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
@@ -62,18 +62,25 @@ const Navbar = () => {
           {/* Events Dropdown */}
           <div className="relative group z-50">
             <button className="hover:text-gray-200 flex items-center space-x-1 ">
-              <span>Events</span> <FaChevronDown />
+              <span>Event</span> <FaChevronDown />
             </button>
             <div className="absolute left-0 mt-1 bg-blue-700 text-white rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <Link to="/upcoming-events" className="block px-4 py-2 hover:bg-blue-800">Upcoming Events</Link>
-              <Link to="/past-events" className="block px-4 py-2 hover:bg-blue-800">Past Events</Link>
+              <Link to="/upcoming-event" className="block px-4 py-2 hover:bg-blue-800">Upcoming Event</Link>
+              <Link to="/past-event" className="block px-4 py-2 hover:bg-blue-800">Past Event</Link>
             </div>
           </div>
 
           <Link to="/career" className="hover:text-gray-200">Career</Link>
           <Link to="/investment" className="hover:text-gray-200">Investment</Link>
           <Link to="/contact" className="hover:text-gray-200">Contact</Link>
-          <Link to="/login" className="hover:text-gray-200">Login/signup</Link>
+         
+           {/*  FIXED LOGIN BUTTON */}
+           <button
+            onClick={() => navigate("/login/signup")}
+            className="hover:text-gray-200 cursor-pointer"
+          >
+            Login/Signup
+          </button>
         </nav>
         <button onClick={toggleSidebar} className="md:hidden text-white">
       <FaBars size={28} className="hover:scale-110 transform transition-all duration-300" />

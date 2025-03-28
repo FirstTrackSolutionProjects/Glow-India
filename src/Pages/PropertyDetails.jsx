@@ -115,15 +115,20 @@ const propertyDetails = {
 
 export default function PropertyDetail() {
   const { id } = useParams();
-  const properties = propertyDetails[id];
+  const normalizedId = id?.toLowerCase(); // Ensure lowercase matching
+  const properties = propertyDetails[normalizedId];
 
   if (!properties) {
-    return <h2 className="text-center text-red-500 text-2xl mt-10">Property Not Found</h2>;
+    return (
+      <h2 className="text-center text-red-500 text-2xl mt-10">
+        Property Not Found
+      </h2>
+    );
   }
 
   return (
     <div className="max-w-4xl mx-auto p-6">
-      <h1 className="text-3xl font-bold text-center capitalize">{id}</h1>
+      <h1 className="text-3xl font-bold text-center capitalize">{normalizedId}</h1>
 
       {properties.map((property, index) => (
         <div key={index} className="mt-8 p-4 border rounded-lg shadow-lg">
@@ -145,3 +150,6 @@ export default function PropertyDetail() {
     </div>
   );
 }
+
+
+

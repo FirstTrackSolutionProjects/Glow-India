@@ -13,9 +13,9 @@ export default function Mission() {
               alt="Building"
               className="w-full h-64 object-cover rounded"
             />
-            <h2 className="text-xl font-semibold mt-4">Building</h2>
+            <h2 className="text-xl font-semibold mt-4">Cottage</h2>
             <p className="text-gray-600 mt-2">
-              At Near Mandarabasa, 12km from Collector, Office Khurda, Odisha.
+              At Near Mandarabasta, 12km from Collector, Office Khurda, Odisha.
             </p>
           </div>
   
@@ -26,7 +26,7 @@ export default function Mission() {
               alt="3BHK Apartment"
               className="w-full h-64 object-cover rounded"
             />
-            <h2 className="text-xl font-semibold mt-4">3BHK Apartment</h2>
+            <h2 className="text-xl font-semibold mt-4">2BHK,3BHK,4BHK Apartment</h2>
             <p className="text-gray-600 mt-2">
               Near Jammu Koli, Sundarpada, Bhubaneswar, Odisha.
             </p>

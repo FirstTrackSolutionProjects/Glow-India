@@ -1,29 +1,3 @@
-// import React from "react";
-// import Banner from "../components/Banner";
-// import PropertyList from "../components/PropertyList";
-// // import Newsletter from "../components/Newsletter";
-// import Reviews from "../components/Reviews";
-// import Mission from "../components/Mission";
-// import Vision from "../components/Vision";
-// import TrustedPartners from "../components/TrustedPartners";
-// import Trip from "../components/Trip";
-// const Home = () => {
-//   return (
-//     <div>
-//       <Banner />       
-//       <PropertyList />
-//        <Reviews/>
-//        <Mission/>
-//        <Vision/>
-//        <TrustedPartners/>
-//        <Trip/> 
-//       {/* <Newsletter />    */}
-//     </div>
-//   );
-// };
-
-// export default Home;
-
 import React, { useState, useEffect } from "react";
 import Banner from "../components/Banner";
 import PropertyList from "../components/PropertyList";
@@ -47,7 +21,7 @@ const Home = () => {
 
   return (
     <div>
-      {showLanding && <Banner />}  {/* Show landing page on first visit */}
+      {showLanding && <Banner />} 
       
       <PropertyList />
       <Reviews />
@@ -61,3 +35,5 @@ const Home = () => {
 };
 
 export default Home;
+
+

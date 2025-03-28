@@ -26,6 +26,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/property/:id" element={<PropertyDetails />} />
+        {/* <Route path="/propertydetails/:propertyType" element={<PropertyDetail />} /> */}
+
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
@@ -42,3 +44,5 @@ function App() {
 }
 
 export default App;
+
+

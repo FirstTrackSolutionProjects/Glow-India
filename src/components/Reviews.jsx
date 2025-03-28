@@ -39,7 +39,7 @@ const testimonials = [
     review:
       "I moved into my new duplex, and I am extremely satisfied with the construction quality and the peaceful environment. A great decision!",
     name: "Vikram Rao",
-    avatar: "/Bavatars.jpg",
+    avatar: "/Bavatar.jpg",
     rating: 4.5,
   },
 ];
