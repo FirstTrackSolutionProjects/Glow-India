@@ -6,7 +6,7 @@ import Mission from "../components/Mission";
 import Vision from "../components/Vision";
 import TrustedPartners from "../components/TrustedPartners";
 import Trip from "../components/Trip";
-import Newsletter from "../components/Newsletter";
+// import Newsletter from "../components/Newsletter";
 import { useLocation } from "react-router-dom";
 
 const Home = () => {
@@ -29,7 +29,7 @@ const Home = () => {
       <Vision />
       <TrustedPartners />
       <Trip />
-      <Newsletter/>
+      {/* <Newsletter/> */}
     </div>
   );
 };
