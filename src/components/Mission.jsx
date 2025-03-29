@@ -28,7 +28,7 @@ export default function Mission() {
             />
             <h2 className="text-xl font-semibold mt-4">2BHK,3BHK,4BHK Apartment</h2>
             <p className="text-gray-600 mt-2">
-              Near Jammu Koli, Sundarpada, Bhubaneswar, Odisha.
+              Near Jammu Koli, Sundarpada, Bhubaneswar, Odisha. <span className="font-extrabold text-black">SOLD OUT</span>
             </p>
           </div>
         </div>

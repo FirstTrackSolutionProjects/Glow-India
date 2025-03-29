@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import SidebarMenu from "./components/SidebarMenu";
+// import CurrentProject from "./components/CurrentProject";
 import Footer from "./components/Footer";
 import Home from "./Pages/Home";
 import PropertyDetails from "./Pages/PropertyDetails";
@@ -27,7 +28,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/property/:id" element={<PropertyDetails />} />
         {/* <Route path="/propertydetails/:propertyType" element={<PropertyDetail />} /> */}
-
+        {/* <Route path="/projects/current" element={<CurrentProject />} /> */}
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
