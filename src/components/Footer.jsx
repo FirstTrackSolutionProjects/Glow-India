@@ -41,7 +41,7 @@ const Footer = () => {
               <span className="text-blue-800">GLOW</span> <span className="text-black">INDIA</span> <span className="text-gray-700 block md:inline">CORPORATE OFFICE</span>
             </h1>
           <ul className="space-y-2 text-sm mt-3">
-            <li className="flex items-center"><span className="mr-2">📞</span> +91 9439565249 / 9337545049</li>
+            <li className="flex items-center"><span className="mr-2">📞</span> +91 9439565249 / 9337545249</li>
             <li className="flex items-center"><span className="mr-2">📧</span> info@GlowIndia.co.in</li>
             <li className="flex items-center"><span className="mr-2">📍</span> CHP -29/30, Kanan Vihar, Phase 1, Patia, Bhubaneswar, Odisha -751002</li>
           </ul>
@@ -61,7 +61,7 @@ const Footer = () => {
 
       {/* Copyright Section */}
       <div className="text-center text-sm mt-6 border-t border-gray-600 pt-4">
-        <p>Copyright © 2025 Glow India. All Rights Reserved.</p>
+        <p>Copyright©2025 Glow India. All Rights Reserved.</p>
         <p>Developed by First Track Solution Technologies</p>
       </div>
     </footer>

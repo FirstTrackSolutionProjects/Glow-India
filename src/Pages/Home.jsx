@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Banner from "../components/Banner";
 import PropertyList from "../components/PropertyList";
 import Reviews from "../components/Reviews";
+import Glowindia from "../components/glowindia";
 import Mission from "../components/Mission";
 import Vision from "../components/Vision";
 import TrustedPartners from "../components/TrustedPartners";
@@ -25,6 +26,7 @@ const Home = () => {
       
       <PropertyList />
       <Reviews />
+      <Glowindia/>
       <Mission />
       <Vision />
       <TrustedPartners />
