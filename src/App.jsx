@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import SidebarMenu from "./components/SidebarMenu";
-
+import CurrentProjects from "./Pages/Currentprojects";
+import Mission2030 from "./components/Mission2030";
 import Footer from "./components/Footer";
 import Home from "./Pages/Home";
 import PropertyDetails from "./Pages/PropertyDetails";
@@ -23,12 +24,14 @@ function App() {
     <>
       <Navbar toggleSidebar={toggleSidebar} />
       <SidebarMenu isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
-
+      
+      <div className="h-[calc(100vh-80px)] overflow-x-hidden overflow-y-auto flex flex-col bg-white">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/property/:id" element={<PropertyDetails />} />
-        {/* <Route path="/propertydetails/:propertyType" element={<PropertyDetail />} /> */}
-      
+       
+        <Route path="/current-projects" element={<CurrentProjects />} />
+        <Route path="/mission2030" element={<Mission2030 />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
@@ -38,8 +41,8 @@ function App() {
         <Route path="/terms" element={<Terms />} />
         <Route path="/privacy" element={<Privacy />} />
       </Routes>
-
       <Footer />
+      </div>
     </>
   );
 }
