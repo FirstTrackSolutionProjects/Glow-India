@@ -2,8 +2,8 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
-import "swiper/css/pagination"; // Import pagination styles
-import { Autoplay, Pagination } from "swiper/modules"; // Import Pagination module
+import "swiper/css/pagination"; 
+import { Autoplay, Pagination } from "swiper/modules"; 
 
 const trips = [
   { image: "/assets/trip-1.jpg" },
@@ -12,13 +12,10 @@ const trips = [
   { image: "/assets/trip-4.jpg" },
   { image: "/assets/trip-5.jpg" },
   { image: "/assets/trip-6.jpg" },
-  { image: "/assets/trip-7.jpg" },
+  
   { image: "/assets/trip-8.jpg" },
   { image: "/assets/trip-9.jpg" },
-  { image: "/assets/trip-11.jpg" },
-  { image: "/assets/trip-12.jpg" },
-  { image: "/assets/trip-13.jpg" },
-  { image: "/assets/trip-14.jpg" },
+  { image: "/assets/trip-10.jpg" },
 ];
 
 const Trip = () => {
@@ -47,7 +44,7 @@ const Trip = () => {
             <img
               src={trip.image}
               alt={`Trip ${index + 1}`}
-              className="w-full h-64 object-cover rounded-md"
+              className="w-full h-90 object-cover rounded-md"
             />
           </SwiperSlide>
         ))}

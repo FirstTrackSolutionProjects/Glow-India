@@ -53,7 +53,7 @@ const SidebarMenu = ({ isOpen, toggleSidebar }) => {
         ))}
 
          {/* Dropdown: Properties */}
-        <li className="transition duration-300">
+        {/* <li className="transition duration-300">
          <div
           className="flex justify-between items-center cursor-pointer p-2 hover:bg-yellow-200 rounded"
           onClick={() => toggleDropdown("Properties")}
@@ -85,11 +85,11 @@ const SidebarMenu = ({ isOpen, toggleSidebar }) => {
         )}
         </ul>
           )}
-        </li>
+        </li> */}
 
 
         {/* Dropdown: Location */}
-        <li className="transition duration-300">
+        {/* <li className="transition duration-300">
           <div className="flex justify-between items-center cursor-pointer hover:bg-yellow-200 p-2 rounded" onClick={() => toggleDropdown('Location')}>
             Location <FaChevronDown className={`${activeDropdown === 'Location' ? 'rotate-180' : ''} transition-transform duration-300`} />
           </div>
@@ -108,7 +108,7 @@ const SidebarMenu = ({ isOpen, toggleSidebar }) => {
               ))}
             </ul>
           )}
-        </li>
+        </li> */}
 
         {/* Static Links */}
         <li className="hover:bg-yellow-200 p-2 rounded transition duration-300">
@@ -163,7 +163,7 @@ const SidebarMenu = ({ isOpen, toggleSidebar }) => {
             </Link>
           </li>
           <li className="hover:bg-gray-200 p-2 rounded    transition duration-300">
-            <Link to="/mission-2030" onClick=   {toggleSidebar} className="block w-full">
+            <Link to="/mission2030" onClick=   {toggleSidebar} className="block w-full">
               Mission 2030
             </Link>
             </li>

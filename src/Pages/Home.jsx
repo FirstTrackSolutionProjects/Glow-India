@@ -3,11 +3,11 @@ import Banner from "../components/Banner";
 import PropertyList from "../components/PropertyList";
 import Reviews from "../components/Reviews";
 import Glowindia from "../components/Glowindia";
-import Mission from "../components/Mission";
+import Mission from "../components/Mission2030";
 import Vision from "../components/Vision";
 import TrustedPartners from "../components/TrustedPartners";
 import Trip from "../components/Trip";
-// import Newsletter from "../components/Newsletter";
+
 import { useLocation } from "react-router-dom";
 
 const Home = () => {
@@ -31,7 +31,7 @@ const Home = () => {
       <Vision />
       <TrustedPartners />
       <Trip />
-      {/* <Newsletter/> */}
+     
     </div>
   );
 };

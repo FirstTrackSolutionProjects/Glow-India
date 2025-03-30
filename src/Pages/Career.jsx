@@ -2,7 +2,7 @@ import React from "react";
 
 const Career = () => {
   return (
-    <div className="max-w-3xl mx-auto p-6 bg-white shadow-lg rounded-lg">
+    <div className="max-w-3xl w-full mx-auto p-6 bg-white shadow-lg rounded-lg">
       <h2 className="text-2xl font-bold text-gray-800 text-center mb-6">Apply Now</h2>
 
       <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
