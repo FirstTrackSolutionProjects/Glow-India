@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import SidebarMenu from "./components/SidebarMenu";
 import CurrentProjects from "./Pages/Currentprojects";
-import NewProjects from "./Pages/NewProjects";
+import Newprojects from "./Pages/Newprojects";
 import Mission2030 from "./components/Mission2030";
 import Footer from "./components/Footer";
 import Home from "./Pages/Home";
@@ -32,7 +32,7 @@ function App() {
         <Route path="/property/:id" element={<PropertyDetails />} />
        
         <Route path="/current-projects" element={<CurrentProjects />} />
-        <Route path="/new-projects" element={<NewProjects />} />
+        <Route path="/new-projects" element={<Newprojects />} />
         <Route path="/mission2030" element={<Mission2030 />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
