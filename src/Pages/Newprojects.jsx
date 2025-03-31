@@ -23,7 +23,7 @@ const properties = [
     id: 3,
     type: "Plot",
     location: "Cuttack",
-    images: ["/plot 2.jpg", "/plot 2.jpg", "/plot 3.jpg"],
+    images: ["/plot 2.jpg", "/plot 1.jpg", "/plot 3.jpg"],
   },
   {
     id: 4,
