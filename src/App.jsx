@@ -16,6 +16,8 @@ import Login from "./components/Login";
 import Register from "./Pages/Register";
 import Terms from "./Pages/Terms";
 import Privacy from "./Pages/Privacy";
+import PastEventsPage from "./Pages/Pastevents";
+import UpcomingEventsPage  from "./Pages/upcomingevents";
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -42,6 +44,8 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/privacy" element={<Privacy />} />
+        <Route path="/past-event" element={<PastEventsPage />} /> 
+        <Route path="/upcoming-event" element={<UpcomingEventsPage />} />
       </Routes>
       <Footer />
       </div>
