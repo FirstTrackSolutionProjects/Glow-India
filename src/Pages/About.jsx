@@ -28,11 +28,11 @@ const About = () => {
           <p className="mt-4">
             With a strong presence in <span className="font-semibold">Bhubaneswar, Odisha</span>, and beyond, the organization 
             has made remarkable strides in real estate, offering over 
-            <span className="font-semibold"> 100 residential properties</span>, including <span className="font-semibold">2BHK and 3BHK flats</span> 
+            <span className="font-semibold"> 100 residential properties</span>, including <span className="font-semibold">2BHK and 3BHK flats </span> 
             and plots in <span className="font-bold text-gray-900">Bhubaneswar, Cuttack, and Puri.</span>
           </p>
           <p className="mt-4">
-            The <span className="font-bold text-blue-900">14 anniversary</span>, hold on <span className="font-bold text-blue-900">7th april 2025</span> at the prestigious 
+            The <span className="font-bold text-blue-900">14 anniversary</span>, held on <span className="font-bold text-blue-900">7th April 2025</span> at the prestigious 
             <span className="font-extrabold text-red-600"> Hotel Saaj – Premium in Bhubaneswar</span>, marks another milestone in 
             <span className="font-bold text-gray-900"> Glow India Parivar’s</span> commitment to empowering its leaders 
             and enriching customer trust.
