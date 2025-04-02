@@ -77,11 +77,12 @@ const sliderSettings = {
 
 const Blog = () => {
   return (
-    <div className="max-w-6xl mx-auto p-8">
+    <div className="w-full mx-auto p-8">
       <h1 className="text-4xl font-bold text-center mb-8 text-indigo-800">
         Popular Places in Odisha
       </h1>
 
+      <div className="max-w-6xl mx-auto">
       {places.map((location, index) => (
         <div key={index} className="mb-12">
           <h2 className="text-3xl font-semibold text-teal-700 mb-6 border-b pb-2">
@@ -109,6 +110,7 @@ const Blog = () => {
           ))}
         </div>
       ))}
+      </div>
     </div>
   );
 };
