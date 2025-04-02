@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="bg-gradient-to-r from-rose-200  to-rose-400  text-white shadow-lg animate-gradient-x mb-6 ">
+    <header className="bg-gradient-to-r from-rose-200  to-rose-400  text-white shadow-lg animate-gradient-x">
       <div className="container mx-auto flex justify-between items-center p-2 ">
         <div className="flex items-center space-x-4">
           <img src="/assets/logo.jpg" alt="Logo" className="h-16 w-auto object-cover text-4xl font-bold border-4 border-black -ml-2" />
@@ -24,7 +24,6 @@ const Navbar = () => {
         <button
             onClick={() => {
               navigate('/');
-              toggleSidebar();
             }}
             className="block w-full text-left cursor-pointer"
           >
