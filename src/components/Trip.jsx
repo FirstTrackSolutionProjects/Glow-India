@@ -20,14 +20,14 @@ const trips = [
 
 const Trip = () => {
   return (
-    <div className="bg-gray-100 py-10 mt-5">
+    <div className="bg-gray-100 py-10 mt-5 mx-4">
       <h2 className="text-center text-2xl font-extrabold text-gray-800 mb-6">
         Glow India Trips
       </h2>
 
       <Swiper
         spaceBetween={20}
-        slidesPerView={3}
+        slidesPerView={1}
         loop={true}
         autoplay={{ delay: 2500, disableOnInteraction: false }}
         pagination={{ clickable: true }} 
@@ -37,7 +37,7 @@ const Trip = () => {
           768: { slidesPerView: 2 },
           500: { slidesPerView: 1 },
         }}
-        className="max-w-6xl mx-auto"
+        className="max-w-6xl mx-auto px-2"
       >
         {trips.map((trip, index) => (
           <SwiperSlide key={index}>
