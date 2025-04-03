@@ -18,7 +18,6 @@ const upcomingEvents = [
     // date: "15th May to 20th May 2025",
     image: "/ue-3.jpg",
      location: "KRAZZY TASHKENT"
-    
   }
  
 ];

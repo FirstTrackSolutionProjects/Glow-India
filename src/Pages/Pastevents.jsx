@@ -9,19 +9,19 @@ const pastEvents = [
     },
     {
         title: "22nd Achievers Meet - PATTAYA City - Thailand",
-        date: " 29th sep to 4th oct 2023",
+        date: " 29th Sep to 4th Oct 2023",
         image: "/event-1.jpg",
         description: "Total 30 no's Participated."
     },
     {
         title: "Bangkok Trip",
-        date: "12th feb 2024",
+        date: "12th Feb 2024",
         image: "/event-2.jpg",
         description: "Total 45 no's Participated."
     },
     {
-        title: "Janmmu Kashmir Trip",
-        date: "juiy 8th to 14th july 2024",
+        title: "Jammu Kashmir Trip",
+        date: "Juiy 8th to 14th July 2024",
         image: "/event-3.jpg",
         description: "Total 25 no's Participated."
     }
