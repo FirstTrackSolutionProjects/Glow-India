@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Slideshow from "../components/Slideshow";
 import Banner from "../components/Banner";
 import PropertyList from "../components/PropertyList";
 import Reviews from "../components/Reviews";
@@ -22,8 +23,8 @@ const Home = () => {
 
   return (
     <div>
-      {showLanding && <Banner />} 
-      
+      {showLanding && <Slideshow />} 
+      <Banner/>
       <PropertyList />
       <Reviews />
       <Glowindia/>

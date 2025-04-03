@@ -1,59 +1,19 @@
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React from "react";
 
 const Banner = () => {
-  const images = [
-    '/assets/banner.jpg',
-    '/assets/banner2.jpg',
-    '/assets/banner3.jpg',
-  ];
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % images.length);
-  };
-
-  const goToSlide = (index) => {
-    setCurrentIndex(index);
-  };
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 3000);
-    return () => clearInterval(interval);
-  }, [currentIndex]);
-
   return (
-    <div className="relative w-full h-96 text-white overflow-hidden mb-4">
-      <AnimatePresence>
-        {images.map((image, index) =>
-          index === currentIndex ? (
-            <motion.img
-              key={image}
-              src={image}
-              alt="Slide"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.5 }}
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-          ) : null
-        )}
-      </AnimatePresence>
-
-      {/* Dots Navigation */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2 z-20">
-        {images.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => goToSlide(index)}
-            className={`w-3 h-3 rounded-full ${index === currentIndex ? 'bg-white' : 'bg-gray-400'} transition duration-300`}
-          ></button>
-        ))}
-      </div>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-rose-400 text-white text-center p-6">
+      <h1 className="text-5xl font-bold mb-4 drop-shadow-lg">
+       <span className="text-yellow-300">14th Anniversary</span> of <span className="text-white">Glow India</span> 
+      </h1>
+      <img
+        src="/assets/hotel-1.jpg"
+        alt="Glow India 14th Anniversary"
+        className="w-full max-w-4xl rounded-2xl shadow-lg border-4 border-white"
+      />
+      <p className="text-lg mt-4">
+        Celebrating 14 years of excellence and innovation! Thank you for being a part of our journey.
+      </p>
     </div>
   );
 };

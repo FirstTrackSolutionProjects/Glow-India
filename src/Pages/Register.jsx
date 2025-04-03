@@ -1,7 +1,11 @@
 import React from "react";
 import { FaUser, FaEnvelope, FaLock, FaPhone } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
+  const navigate = useNavigate();
+
+
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="w-full max-w-md bg-white p-8 rounded-lg shadow-lg">
@@ -46,7 +50,11 @@ const Register = () => {
 
         {/* Sign In Link */}
         <p className="text-center text-gray-700 mt-4">
-          Already have an account? <a href="#" className="text-blue-600 font-semibold hover:underline">Sign In</a>
+          Already have an account? 
+          <span 
+            className="text-blue-600 font-semibold hover:underline cursor-pointer"
+            onClick={() => navigate("/login")}
+          > Sign In</span>
         </p>
       </div>
     </div>
