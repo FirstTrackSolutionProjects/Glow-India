@@ -18,8 +18,18 @@ const Login = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
-      <div className="bg-white p-8 rounded-lg shadow-lg w-100 text-center">
+    <div className="flex justify-center items-center min-h-screen bg-gray-100"  >
+      <div className="bg-white p-8 rounded-lg shadow-lg w-150 text-center">
+
+         {/* Login Image */}
+         <div className="w-full mb-4">
+          <img
+            src="assets/login.jpg"
+            alt="Login"
+            className="w-full h-48 object-cover rounded-t-lg"
+          />
+        </div>
+
         <h2 className="text-2xl font-bold mb-6">Sign in</h2>
         <form onSubmit={handleLogin}>
           <div className="mb-4 text-left">

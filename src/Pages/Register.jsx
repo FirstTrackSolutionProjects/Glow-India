@@ -8,7 +8,18 @@ const Register = () => {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="w-full max-w-md bg-white p-8 rounded-lg shadow-lg">
+      <div className="w-full bg-white p-8 rounded-lg shadow-lg">
+
+
+       {/* Login Image */}
+       <div className="w-full mb-4 mt-4">
+          <img
+            src="assets/register.jpg"
+            alt="Login"
+            className="w-full h-60 object-cover rounded-t-lg"
+          />
+        </div>
+
         <h2 className="text-3xl font-bold text-center text-gray-900 mb-6">Register</h2>
 
         <form className="space-y-4">
