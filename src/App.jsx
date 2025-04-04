@@ -12,12 +12,13 @@ import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Blog from "./Pages/Blog";
 import Career from "./Pages/Career";
+import Joinus from "./Pages/Joinus";
 import Login from "./components/Login";
 import Register from "./Pages/Register";
 import Terms from "./Pages/Terms";
 import Privacy from "./Pages/Privacy";
 import PastEventsPage from "./Pages/Pastevents";
-import UpcomingEventsPage  from "./Pages/upcomingevents";
+import UpcomingeventsPage  from "./Pages/upcomingevents";
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -40,12 +41,13 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/career" element={<Career />} />
+        <Route path="/join-us" element={<Joinus />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/past-event" element={<PastEventsPage />} /> 
-        <Route path="/upcoming-event" element={<UpcomingEventsPage />} />
+        <Route path="/upcoming-event" element={<UpcomingeventsPage />} />
       </Routes>
       <Footer />
       </div>

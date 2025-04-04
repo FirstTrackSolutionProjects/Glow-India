@@ -6,6 +6,7 @@ import SidebarMenu from "./SidebarMenu";
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const navigate = useNavigate();
+
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
@@ -13,7 +14,9 @@ const Navbar = () => {
   return (
     <header className="bg-gradient-to-r from-rose-200  to-rose-400  text-white shadow-lg animate-gradient-x">
       <div className="container mx-auto flex justify-between items-center p-2 ">
-        <div className="flex items-center space-x-4">
+
+        {/* logo */}
+          <div className="flex items-center space-x-4 cursor-pointer" onClick={() => navigate("/")}>
           <img src="/assets/logo.jpg" alt="Logo" className="h-16 w-auto object-cover text-4xl font-bold border-4 border-black -ml-2" />
           <h1 className="text-2xl font-bold drop-shadow-lg mt-6">
              <span className="text-blue-800">GLOW</span> <span className="text-black">INDIA</span>
