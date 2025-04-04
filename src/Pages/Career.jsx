@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Career = () => {
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -12,15 +15,31 @@ const Career = () => {
     position: "",
     gender: "",
     dob: "",
-    resume: null, // State for resume file
+    resume: null,
+    otherCity: "",
+    otherState: "",
   });
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+
+    if (name === "dob") {
+     
+      const formattedDate = value.split("-").reverse().join("-");
+      setFormData({ ...formData, dob: formattedDate });
+    } else {
+      setFormData({ ...formData, [name]: value });
+    }
   };
 
   const handleFileChange = (e) => {
     setFormData({ ...formData, resume: e.target.files[0] });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+    alert("Application submitted successfully!");
   };
 
   return (
@@ -29,7 +48,9 @@ const Career = () => {
         Apply Now
       </h2>
 
-      <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {/* First Name */}
+        <label className="block text-gray-700 font-medium">First Name *</label>
         <input
           type="text"
           name="firstName"
@@ -39,6 +60,9 @@ const Career = () => {
           className="border border-gray-300 p-3 rounded-md w-full"
           required
         />
+
+        {/* Last Name */}
+        <label className="block text-gray-700 font-medium">Last Name *</label>
         <input
           type="text"
           name="lastName"
@@ -49,25 +73,32 @@ const Career = () => {
           required
         />
 
+        {/* Email */}
+        <label className="block text-gray-700 font-medium">Email *</label>
         <input
           type="email"
           name="email"
           placeholder="Email Address *"
           value={formData.email}
           onChange={handleChange}
-          className="border border-gray-300 p-3 rounded-md w-full col-span-1 md:col-span-2"
+          className="border border-gray-300 p-3 rounded-md w-full"
           required
         />
+
+        {/* Contact No */}
+        <label className="block text-gray-700 font-medium">Contact No. *</label>
         <input
           type="text"
           name="contactNo"
           placeholder="Contact No *"
           value={formData.contactNo}
           onChange={handleChange}
-          className="border border-gray-300 p-3 rounded-md w-full col-span-1 md:col-span-2"
+          className="border border-gray-300 p-3 rounded-md w-full"
           required
         />
 
+        {/* Gender */}
+        <label className="block text-gray-700 font-medium">Gender *</label>
         <select
           name="gender"
           value={formData.gender}
@@ -80,31 +111,37 @@ const Career = () => {
           <option value="Female">Female</option>
         </select>
 
-        <input
-          type="date"
-          name="dob"
-          value={formData.dob}
-          onChange={handleChange}
-          className="border border-gray-300 p-3 rounded-md w-full"
-          required
-        />
+        {/* Date of Birth */}
+        <div className="col-span-1 md:col-span-2">
+          <label className="block text-gray-700 font-medium">Date of Birth *</label>
+          <input
+            type="date"
+            name="dob"
+            value={formData.dob.split("-").reverse().join("-")}
+            onChange={handleChange}
+            className="border border-gray-300 p-3 rounded-md w-full"
+            required
+          />
+        </div>
 
+        {/* Position */}
+        <label className="block text-gray-700 font-medium">Position *</label>
         <select
           name="position"
           value={formData.position}
           onChange={handleChange}
-          className="border border-gray-300 p-3 rounded-md w-full col-span-1 md:col-span-2"
+          className="border border-gray-300 p-3 rounded-md w-full"
           required
         >
           <option value="">Select Position *</option>
-          <option value="Client Relationship Officer">
-            Client Relationship Officer
-          </option>
+          <option value="Client Relationship Officer">Client Relationship Officer</option>
           <option value="Relationship Manager">Relationship Manager</option>
           <option value="HR Executive">HR Executive</option>
           <option value="Telecaller">Telecaller</option>
         </select>
 
+        {/* City */}
+        <label className="block text-gray-700 font-medium">City *</label>
         <select
           name="city"
           value={formData.city}
@@ -134,6 +171,8 @@ const Career = () => {
           />
         )}
 
+        {/* State */}
+        <label className="block text-gray-700 font-medium">State *</label>
         <select
           name="state"
           value={formData.state}
@@ -162,41 +201,31 @@ const Career = () => {
           />
         )}
 
+        {/* Resume Upload */}
+        <label className="block text-gray-700 font-medium">Upload Resume *</label>
         <input
-          type="text"
-          name="zip"
-          placeholder="ZIP / Postal Code"
-          value={formData.zip}
-          onChange={handleChange}
+          type="file"
+          name="resume"
+          accept=".pdf,.doc,.docx"
+          onChange={handleFileChange}
           className="border border-gray-300 p-3 rounded-md w-full"
+          required
         />
 
-        {/*Resume Upload Field */}
-         <div className="col-span-1 md:col-span-2">
-          <label className="block text-gray-700 font-medium mb-1">
-            Upload Resume *
-          </label>
-          <input
-            type="file"
-            name="resume"
-            accept=".pdf,.doc,.docx"
-            onChange={handleFileChange}
-            className="border border-gray-300 p-3 rounded-md w-full"
-            required
-          />
-          {formData.resume && (
-            <p className="text-sm text-gray-600 mt-2">
-              Selected file: {formData.resume.name}
-            </p>
-          )}
-        </div>
-        
-     
-
-        <button className="w-full md:w-auto bg-emerald-800 hover:bg-rose-900 text-white font-semibold py-3 px-6 rounded-md col-span-1 md:col-span-2">
+        {/* Submit Button */}
+        <button type="submit" className="w-full bg-emerald-800 hover:bg-rose-900 text-white font-semibold py-3 px-6 rounded-md col-span-1 md:col-span-2">
           APPLY NOW
         </button>
       </form>
+          {/* Join Us Button */}
+          <div className="mt-6 text-center">
+        <button
+          onClick={() => navigate("/join-us")}
+          className="w-full bg-sky-400  text-white font-semibold py-3 px-3 rounded-md"
+        >
+          Join Us
+        </button>
+    </div>
     </div>
   );
 };
