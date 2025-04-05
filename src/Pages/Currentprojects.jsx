@@ -71,7 +71,7 @@ export default function CurrentProjects() {
     },
     {
       name: "Cottage",
-      location: "At Near Mandarabasa 12km from, Collector, Office Khurda, Odisha",
+      location: "At Near Mandarabasta 12km from, Collector, Office Khurda, Odisha",
       images: [
         { src: "/cottage 2nd room.jpg", alt: "Sunrise Residency Front View" },
       ]
@@ -80,13 +80,27 @@ export default function CurrentProjects() {
       name: "Residential Plot",
       location: " Near Mira Mandap and Water Park,7 km from Nakhara, Cuttack, Odisha",
       images: [
-        { src: "/plot-1.jpg", alt: "Green Valley Entrance" },
+        { src: "/plot 1.jpg", alt: "Green Valley Entrance" },
+      ]
+    },
+    {
+      name: "Residential Plot",
+      location: "Metro Enclave 2, Birupa Bridge, Jagatpur, Cuttack, Odisha",
+      images: [
+        { src: "/plot 10.jpg", alt: "Green Valley Entrance" },
+      ]
+    },
+    {
+      name: "Duplex",
+      location: "Near Balianta, Hanspal,  Bhubaneswar, Odisha",
+      images: [
+        { src: "/plot 11.jpg", alt: "Green Valley Entrance" },
       ]
     }
   ];
 
   return (
-    <div className="bg-gray-200 min-h-screen p-6">
+    <div className="bg-gray-200 p-6">
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-4xl font-bold text-brown-800">Our Current Projects</h1>
         <p className="text-lg text-gray-700 mt-2">Real Estate Projects -- Residential Land</p>
