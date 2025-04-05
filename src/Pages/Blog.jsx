@@ -28,7 +28,7 @@ const places = [
     city: "Cuttack",
     places: [
       {
-        name: "Barabati Fort",
+        name: "Barabati Stadium",
         images: [
           "/assets/barabati-1.jpg",
           "/assets/barabati-2.jpg",

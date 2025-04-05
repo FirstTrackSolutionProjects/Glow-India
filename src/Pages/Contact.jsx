@@ -27,7 +27,7 @@ const Contact = () => {
         <FaEnvelope className="text-4xl text-red-800 mx-auto mb-3" />
         <h3 className="text-2xl font-bold text-gray-900">Message us</h3>
         <a href="mailto:info@Glowindia.co.in" className="text-lg font-medium text-blue-600 hover:text-blue-800 transition duration-300">
-          info@Glowindia.co.in
+          info@glowindia.co.in
         </a>
         <p className="text-gray-700 mt-2">Send our Customer Service Team questions about our site, app, or finding an agent.</p>
       </div>

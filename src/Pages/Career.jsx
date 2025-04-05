@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 const Career = () => {
-  const navigate = useNavigate();
-
+ 
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -217,15 +215,7 @@ const Career = () => {
           APPLY NOW
         </button>
       </form>
-          {/* Join Us Button */}
-          <div className="mt-6 text-center">
-        <button
-          onClick={() => navigate("/join-us")}
-          className="w-full bg-sky-400  text-white font-semibold py-3 px-3 rounded-md"
-        >
-          Join Us
-        </button>
-    </div>
+       
     </div>
   );
 };

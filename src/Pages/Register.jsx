@@ -12,7 +12,7 @@ const Register = () => {
 
 
        {/* Login Image */}
-       <div className="w-full mt-10">
+       <div className="w-full mt-22">
           <img
             src="assets/register.jpg"
             alt="Login"
@@ -20,7 +20,7 @@ const Register = () => {
           />
         </div>
 
-        <h2 className="text-3xl font-bold text-center text-gray-900 m-6">Register</h2>
+        <h2 className="text-3xl font-bold text-center text-gray-900 m-5">Register</h2>
 
         <form className="space-y-4">
           {/* Full Name */}
@@ -60,7 +60,7 @@ const Register = () => {
         </form>
 
         {/* Sign In Link */}
-        <p className="text-center text-gray-700 mt-4 mb-10">
+        <p className="text-center text-gray-700 mt-4 mb-22">
           Already have an account? 
           <span 
             className="text-blue-600 font-semibold hover:underline cursor-pointer"
