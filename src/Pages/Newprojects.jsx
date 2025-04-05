@@ -204,7 +204,7 @@ const properties = [
   {
     id: 8,
     type: "Residential Plot",
-    status: "SOLD OUT",
+   
     location: "Near Mandarabasta, 12km from Collector, Khurda, Odisha.",
     images: ["/plot 2.jpg", "/plot 8.jpg"],
   },
@@ -275,11 +275,7 @@ export default function NewProjects() {
             <CardContent>
               <h2 className="text-xl font-semibold mt-2">{property.type}</h2>
               <p className="text-gray-600">{property.location}</p>
-              {property.status === "SOLD OUT" && (
-                <span className="inline-block mt-2 text-xs font-bold text-red-600 border border-red-600 px-2 py-1 rounded">
-                  SOLD OUT
-                </span>
-              )}
+            
             </CardContent>
           </Card>
         ))}
