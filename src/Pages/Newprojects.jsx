@@ -4,60 +4,49 @@ import { Input } from "../components/ui/Input";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 
 const properties = [
   {
     id: 1,
-    type: "Plot",
-    location: "Cuttack",
-    area: "10000 sq. ft.",
-    images: ["/plot 1.jpg", "/plot 2.jpg", "/plot 2.jpg"],
+    type: "Residential Plot",
+    location: "Mira Mandap Near WaterPark Nakhara, Cuttack, Odisha",
+    images: ["/plot 1.jpg","/plot 2.jpg"],
   },
   {
     id: 2,
     type: "Duplex",
     location: "Bhubaneswar",
-    area: "10000 sq. ft.",
-    images: ["/assets/duplex-1.jpg", "/assets/duplex-2.jpg", "/assets/duplex-3.jpg"],
+   images: ["/assets/duplex-1.jpg", "/assets/duplex-2.jpg", "/assets/duplex-3.jpg"],
   },
   {
     id: 3,
-    type: "Plot",
-    location: "Cuttack",
-    area: "10000 sq. ft.",
-    images: ["/plot 2.jpg", "/plot 1.jpg", "/plot 3.jpg"],
-  },
-  {
-    id: 4,
     type: "Duplex",
     location: "Puri",
-    area: "10000 sq. ft.",
     images: ["/assets/duplex-2.jpg", "/assets/duplex-2.jpg", "/assets/duplex-3.jpg"],
   },
   {
-    id: 5,
-    type: "Plot",
-    location: "Cuttack",
-    area: "10000 sq. ft.",
-    images: ["/plot 2.jpg", "/plot 1.jpg", "/plot 3.jpg"],
+    id: 4,
+    type: "Residential Plot",
+    location: "Metro Enclave 1 - Tarota Manguli, Cuttack, Odisha",
+    images: ["/plot 3.jpg", "/plot 4.jpg", "/plot 5.jpg", "/plot 6.jpg", "/plot 7.jpg", "/plot 8.jpg", "/plot 9.jpg"],
   },
   {
-    id: 6,
+    id: 5,
     type: "Duplex",
     location: "Bhubaneswar",
     area: "10000 sq. ft.",
     images: ["/assets/duplex-6.jpg", "/assets/duplex-7.jpg", "/assets/duplex-8.jpg"],
   },
   {
-    id: 7,
+    id: 6,
     type: "Plot",
     location: "Cuttack",
     area: "10000 sq. ft.",
     images: ["/plot 2.jpg", "/plot 2.jpg", "/plot 3.jpg"],
   },
   {
-    id: 8,
+    id: 7,
     type: "Duplex",
     location: "Puri",
     area: "10000 sq. ft.",
@@ -105,6 +94,7 @@ export default function NewProjects() {
             <Swiper
               modules={[Pagination]}
               pagination={{ clickable: true }}
+              autoplay={{ delay: 3000, disableOnInteraction: true }}
               className="rounded-lg"
             >
               {property.images.map((image, index) => (
@@ -120,7 +110,7 @@ export default function NewProjects() {
             <CardContent>
               <h2 className="text-xl font-semibold mt-2">{property.type}</h2>
               <p className="text-gray-600">{property.location}</p>
-              <p className="text-gray-600">{property.area}</p>
+             
             </CardContent>
           </Card>
         ))}

@@ -1,23 +1,23 @@
 import React from "react";
 
 const upcomingEvents = [
+  // {
+  //   title: "28th Training Program Trip GANGTOK ",
+  //   // date: "15th May to 20th May 2025",
+  //   image: "/ue-1.jpg",
+  //   location:"MG Marg, Gangtok, West Bengal"
+  // },
+  // {
+  //   title: " 28th Training Program Trip DARJEELING",
+  //   // date: "15th May to 20th May 2025",
+  //   image: "/ue-2.jpg",
+  //   location: "Mall Road, Darjeeling, West Bengal"
+  // },
   {
-    title: "28th Training Program Trip GANGTOK ",
-    // date: "15th May to 20th May 2025",
-    image: "/ue-1.jpg",
-    location:"MG Marg, Gangtok, West Bengal"
-  },
-  {
-    title: " 28th Training Program Trip DARJEELING",
-    // date: "15th May to 20th May 2025",
-    image: "/ue-2.jpg",
-    location: "Mall Road, Darjeeling, West Bengal"
-  },
-  {
-    title: "29th Training Program Trip KRAZZY TASHKENT",
+    title: "Our Next 29th Training Program - Thailand On 12th May 2025 - Trip 4 Nights 4 Days",
     // date: "15th May to 20th May 2025",
     image: "/ue-3.jpg",
-     location: "KRAZZY TASHKENT"
+     location: "Thailand"
   }
  
 ];
