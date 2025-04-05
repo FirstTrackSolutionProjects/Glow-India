@@ -138,12 +138,35 @@ const JoinUs = () => {
               onChange={handleChange}
               className="border border-gray-300 p-2 rounded-md w-full"
             />
-            <textarea
-              name="postAppliedFor"
-              placeholder="Post Applied For"
-              onChange={handleChange}
-              className="border border-gray-300 p-2 rounded-md col-span-1 md:col-span-2"
-            />
+             {/* DOB */}
+             <div>
+              <label className="block font-medium text-gray-700 mb-1">
+                Date of Birth *
+              </label>
+              <input
+                type="date"
+                name="dob"
+                required
+                onChange={handleChange}
+                className="border border-gray-300 p-2 rounded-md w-full"
+              />
+            </div>
+            {/* Gender */}
+            <div>
+              <label className="block font-medium text-gray-700 mb-1">
+                Gender *
+              </label>
+              <select
+                name="gender"
+                required
+                onChange={handleChange}
+                className="border border-gray-300 p-2 rounded-md w-full"
+              >
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
           </div>
 
           {/* Qualification */}
