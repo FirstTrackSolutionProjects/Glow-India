@@ -12,7 +12,7 @@ const Register = () => {
 
 
        {/* Login Image */}
-       <div className="w-full mt-22">
+       <div className="w-full mt-30">
           <img
             src="assets/register.jpg"
             alt="Login"
