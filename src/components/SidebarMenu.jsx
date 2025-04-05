@@ -195,6 +195,14 @@ const SidebarMenu = ({ isOpen, toggleSidebar }) => {
         Login
       </button>
       </li>
+
+        {/* Static Link: Join Us */}
+        <li className="hover:bg-yellow-200 p-2 rounded transition duration-300">
+          <Link to="/join-us" onClick={toggleSidebar} className="block w-full">
+            Join Us
+          </Link>
+        </li>
+
       </ul>
     </div>
   );
