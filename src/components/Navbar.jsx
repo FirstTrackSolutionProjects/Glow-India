@@ -78,11 +78,15 @@ const Navbar = () => {
          
            {/*  FIXED LOGIN BUTTON */}
            <button
-            onClick={() => navigate("/login/signup")}
+            onClick={() => navigate("/login")}
             className="hover:text-gray-200 cursor-pointer"
           >
-            Login/Signup
+            Login
           </button>
+
+          <Link to="/join-us" className="hover:text-gray-200 inline-block whitespace-nowrap">
+           Join Us
+          </Link>
         </nav>
         <button onClick={toggleSidebar} className="md:hidden text-white">
       <FaBars size={28} className="hover:scale-110 transform transition-all duration-300" />
