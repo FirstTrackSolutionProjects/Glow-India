@@ -203,10 +203,10 @@ const properties = [
   },
   {
     id: 8,
-    type: "Residential Plot",
+    type: "Cottage",
    
-    location: "Near Mandarabasta, 12km from Collector, Khurda, Odisha.",
-    images: ["/plot 2.jpg", "/plot 8.jpg"],
+    location: "Near Mandarabasta, 12km from Collector Office, Khurda, Odisha.",
+    images: ["/cottage 2nd room.jpg"],
   },
 ];
 
