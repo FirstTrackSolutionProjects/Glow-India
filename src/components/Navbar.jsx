@@ -27,7 +27,7 @@ const Navbar = () => {
           <img
             src="/assets/logo.jpg"
             alt="Logo"
-            className="h-16 w-auto object-cover text-4xl font-bold border-4 border-black -ml-2"
+            className="h-16 w-auto object-cover text-4xl font-bold border-4 border-black -ml-9"
           />
           <h1 className="text-2xl font-bold drop-shadow-lg mt-6">
             <span className="text-blue-800">GLOW</span>{" "}
