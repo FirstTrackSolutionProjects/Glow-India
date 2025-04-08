@@ -19,6 +19,7 @@ import Terms from "./Pages/Terms";
 import Privacy from "./Pages/Privacy";
 import PastEventsPage from "./Pages/Pastevents";
 import UpcomingeventsPage  from "./Pages/upcomingevents";
+import Verify from "./Pages/Verify";
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -48,6 +49,7 @@ function App() {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/past-event" element={<PastEventsPage />} /> 
         <Route path="/upcoming-event" element={<UpcomingeventsPage />} />
+        <Route path='/verify' element={<Verify/>}></Route>
       </Routes>
       <Footer />
       </div>
