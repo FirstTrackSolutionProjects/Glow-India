@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-// import { Box, Typography, TextField, Button, Grid } from "@mui/material";
-// import { toast } from "react-toastify";
-// import "react-toastify/dist/ReactToastify.css";
-// import { FileUpload, CheckCircle } from "..mui/icons-material";
+import { Box, Typography, TextField, Button } from "@mui/material";
+import Grid from '@mui/material/GridLegacy'
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { FileUpload, CheckCircle } from "@mui/icons-material";
 import { z } from "zod";
 // import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
@@ -28,7 +29,7 @@ const formSchema = z.object({
 });
 
 const FileUploadForm = ({ reqId, onNext }) => {
-  const { id } = useAuth();
+  // const { id } = useAuth();
   const [fileData, setFileData] = useState({
     aadhar_doc: null,
     pan_doc: null,
@@ -166,7 +167,7 @@ const FileUploadForm = ({ reqId, onNext }) => {
       </Typography>
       <Grid container spacing={2}>
         {docs.map((doc, idx) => (
-          <Grid item xs={12} md={6} key={idx}>
+          <Grid item xs={12} md={6} sm={6} key={idx}>
             <Typography variant="h6">{doc.name}</Typography>
             <TextField
               type="file"
@@ -175,6 +176,7 @@ const FileUploadForm = ({ reqId, onNext }) => {
               variant="outlined"
               fullWidth
               onChange={handleFileChange}
+              size="small"
             />
             <Button
               variant="contained"
@@ -295,16 +297,17 @@ const TextForm = ({ onNext }) => {
 
       <Grid container spacing={2} sx={{ mt: 2 }}>
         {fields.map((field, idx) => (
-          <Grid item xs={12} md={6} key={idx}>
+          <Grid item xs={12} md={6} sm={6} key={idx}>
             <TextField
               label={field.fieldTitle}
               variant="outlined"
               name={field.fieldId}
               value={formData[field.fieldId]}
               onChange={handleChange}
-              fullWidth
+               fullWidth
               error={Boolean(errors[field.fieldId])}
               helperText={errors[field.fieldId] ? errors[field.fieldId][0] : field.helperText}
+              size="small"
             />
           </Grid>
         ))}
@@ -325,7 +328,7 @@ const TextForm = ({ onNext }) => {
 
 const Verify = () => {  
   const navigate = useNavigate();  
-  const {isAuthenticated ,verified, emailVerified} = useAuth()
+  // const {isAuthenticated ,verified, emailVerified} = useAuth()
   const [step, setStep] = useState(1);
   const [reqId, setReqId] = useState(null);
   const nextStep = () => setStep((prevStep) => prevStep + 1);
@@ -345,22 +348,23 @@ const Verify = () => {
     }
   }
 
-  useEffect(()=>{
-    if (isAuthenticated && verified){
-        navigate('/dashboard')
-    } else if (isAuthenticated && !emailVerified){
-        navigate('/login')
-    } else if (!isAuthenticated){
-        navigate('/login')
-    } else {
-        incompleteRequest()
-        pendingRequest()
-    }
+  // useEffect(()=>{
+  //   if (isAuthenticated && verified){
+  //       navigate('/dashboard')
+  //   } else if (isAuthenticated && !emailVerified){
+  //       navigate('/login')
+  //   } else if (!isAuthenticated){
+  //       navigate('/login')
+  //   } else {
+  //       incompleteRequest()
+  //       pendingRequest()
+  //   }
     
-  },[isAuthenticated])
+  // },[isAuthenticated])
 
   return (
     <Box
+      className = "min-h-[calc(100vh-64px)]"
       sx={{
         // minHeight: "100vh",
         display: "flex",

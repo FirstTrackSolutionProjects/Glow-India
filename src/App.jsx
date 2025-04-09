@@ -30,7 +30,7 @@ function App() {
       <Navbar toggleSidebar={toggleSidebar} />
       <SidebarMenu isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
       
-      <div className="h-[calc(100vh-80px)] overflow-x-hidden overflow-y-auto flex flex-col bg-white">
+      <div className="h-[calc(100vh-64px)] overflow-x-hidden overflow-y-auto flex flex-col bg-white">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/property/:id" element={<PropertyDetails />} />
