@@ -8,15 +8,15 @@ const Register = () => {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="w-full bg-white p-8 rounded-lg shadow-lg">
+      <div className="w-[600px] bg-white p-8 rounded-lg shadow-lg text-center">
 
 
        {/* Login Image */}
-       <div className="w-full mt-30">
+       <div className="w-full">
           <img
             src="assets/register.jpg"
             alt="Login"
-            className="w-full h-60 object-cover rounded-t-lg"
+            className="w-full h-60 object-cover rounded-lg"
           />
         </div>
 
@@ -62,7 +62,7 @@ const Register = () => {
         </form>
 
         {/* Sign In Link */}
-        <p className="text-center text-gray-700 mt-4 mb-22">
+        <p className="text-center text-gray-700 mt-5">
           Already have an account? 
           <span 
             className="text-blue-600 font-semibold hover:underline cursor-pointer"
