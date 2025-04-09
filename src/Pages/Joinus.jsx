@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import ProtectedPage from "../components/ProtectedPage";
+
 
 const JoinUs = () => {
   const [formData, setFormData] = useState({
@@ -61,6 +63,7 @@ const JoinUs = () => {
   ];
 
   return (
+  <ProtectedPage>
     <div className="flex justify-center items-start min-h-screen bg-gray-100 px-4 py-10 overflow-y-auto">
       <div className="bg-white shadow-lg rounded-lg p-6 w-full max-w-4xl">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
@@ -228,9 +231,11 @@ const JoinUs = () => {
         </form>
       </div>
     </div>
+ </ProtectedPage>
   );
 };
 
 export default JoinUs;
+
 
 

@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="bg-gradient-to-r from-rose-200  to-rose-400  text-white shadow-lg animate-gradient-x">
+    <header className="bg-gradient-to-r from-rose-200  to-rose-400  text-white shadow-lg animate-gradient-x h-16 flex items-center">
       <div className="container mx-auto flex justify-between items-center p-2 ">
         {/* logo */}
         <div
@@ -27,11 +27,11 @@ const Navbar = () => {
           <img
             src="/assets/logo.jpg"
             alt="Logo"
-            className="h-16 w-auto object-cover text-4xl font-bold border-4 border-black -ml-2"
+            className="h-12 w-auto object-cover text-4xl font-bold border-4 border-black"
           />
-          <h1 className="text-2xl font-bold drop-shadow-lg mt-6">
-            <span className="text-blue-800">GLOW</span>{" "}
-            <span className="text-black">INDIA</span>
+          <h1 className="text-lg font-bold drop-shadow-lg flex flex-col justify-between leading-5">
+            <p className="text-blue-800 ">GLOW</p>
+            <p className="text-black">INDIA</p>
           </h1>
         </div>
 

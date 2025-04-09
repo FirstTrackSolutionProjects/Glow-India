@@ -19,6 +19,7 @@ import Terms from "./Pages/Terms";
 import Privacy from "./Pages/Privacy";
 import PastEventsPage from "./Pages/Pastevents";
 import UpcomingeventsPage  from "./Pages/upcomingevents";
+import Verify from "./Pages/Verify";
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -29,7 +30,7 @@ function App() {
       <Navbar toggleSidebar={toggleSidebar} />
       <SidebarMenu isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
       
-      <div className="h-[calc(100vh-80px)] overflow-x-hidden overflow-y-auto flex flex-col bg-white">
+      <div className="h-[calc(100vh-64px)] overflow-x-hidden overflow-y-auto flex flex-col bg-white">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/property/:id" element={<PropertyDetails />} />
@@ -48,6 +49,7 @@ function App() {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/past-event" element={<PastEventsPage />} /> 
         <Route path="/upcoming-event" element={<UpcomingeventsPage />} />
+        <Route path='/verify' element={<Verify/>}></Route>
       </Routes>
       <Footer />
       </div>

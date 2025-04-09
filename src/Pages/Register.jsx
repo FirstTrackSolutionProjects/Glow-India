@@ -29,6 +29,13 @@ const Register = () => {
             <input type="text" placeholder="Your Full Name" className="w-full p-3 focus:outline-none" />
           </div>
 
+            {/* Mobile Number */}
+            <div className="flex items-center border rounded-lg overflow-hidden shadow-sm">
+            <span className="px-3 text-gray-500"><FaPhone /></span>
+            <input type="tel" placeholder="1234567890" className="w-full p-3 focus:outline-none" />
+          </div>
+
+
           {/* Email */}
           <div className="flex items-center border rounded-lg overflow-hidden shadow-sm">
             <span className="px-3 text-gray-500"><FaEnvelope /></span>
@@ -47,12 +54,7 @@ const Register = () => {
             <input type="password" placeholder="Confirm Password" className="w-full p-3 focus:outline-none" />
           </div>
 
-          {/* Mobile Number */}
-          <div className="flex items-center border rounded-lg overflow-hidden shadow-sm">
-            <span className="px-3 text-gray-500"><FaPhone /></span>
-            <input type="tel" placeholder="1234567890" className="w-full p-3 focus:outline-none" />
-          </div>
-
+        
           {/* Register Button */}
           <button className="w-full bg-rose-900 text-white py-3 rounded-lg font-semibold  transition">
             Register
