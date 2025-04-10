@@ -13,7 +13,7 @@ import Contact from "./Pages/Contact";
 import Blog from "./Pages/Blog";
 import Career from "./Pages/Career";
 import Joinus from "./Pages/Joinus";
-import Login from "./components/Login";
+import Signin from "./components/Signin";
 import Register from "./Pages/Register";
 import Terms from "./Pages/Terms";
 import Privacy from "./Pages/Privacy";
@@ -30,7 +30,7 @@ function App() {
       <Navbar toggleSidebar={toggleSidebar} />
       <SidebarMenu isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
       
-      <div className="h-[calc(100vh-64px)] overflow-x-hidden overflow-y-auto flex flex-col bg-white">
+      <div className="min-h-[calc(100vh-64px)] overflow-x-hidden overflow-y-auto flex flex-col bg-white">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/property/:id" element={<PropertyDetails />} />
@@ -43,7 +43,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/career" element={<Career />} />
         <Route path="/join-us" element={<Joinus />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/signin" element={<Signin />} />
         <Route path="/register" element={<Register />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/privacy" element={<Privacy />} />
