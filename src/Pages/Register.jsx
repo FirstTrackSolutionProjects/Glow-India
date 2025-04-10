@@ -12,13 +12,13 @@ const Register = () => {
 
 
        {/* Login Image */}
-       <div className="w-full">
+       {/* <div className="w-full">
           <img
             src="assets/register.jpg"
             alt="Login"
             className="w-full h-60 object-cover rounded-lg"
           />
-        </div>
+        </div> */}
 
         <h2 className="text-3xl font-bold text-center text-gray-900 m-5">Register</h2>
 

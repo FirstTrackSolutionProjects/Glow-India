@@ -18,7 +18,7 @@ const Login = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100"  >
+    <div className="flex justify-center items-center min-h-screen bg-gray-200" >
       <div className="bg-white p-8 rounded-lg shadow-lg w-150 text-center">
 
          {/* Login Image */}

@@ -4,7 +4,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from "re
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-blue-100 to-blue-200 text-gray-800 py-10 mt-10">
+    <footer className="bg-gradient-to-r from-blue-100 to-blue-200 text-gray-800 py-10">
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 items-center gap-6">
         
         {/* Logo Section */}

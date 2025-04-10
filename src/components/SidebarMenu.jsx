@@ -187,12 +187,12 @@ const SidebarMenu = ({ isOpen, toggleSidebar }) => {
         <li className="hover:bg-yellow-200 p-2 rounded transition duration-300">
         <button
          onClick={() => {
-          navigate('/login');
+          navigate('/signin');
           toggleSidebar(); 
         }}
          className="block w-full text-left"
         >
-        Login
+        Sign In
       </button>
       </li>
 
