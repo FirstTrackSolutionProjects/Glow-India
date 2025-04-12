@@ -139,10 +139,10 @@ const Navbar = () => {
 
           {/* FIXED LOGIN BUTTON */}
           <button
-            onClick={() => navigate("/login")}
-            className="hover:text-gray-200 cursor-pointer"
+            onClick={() => navigate("/signin")}
+            className="hover:text-gray-200 cursor-pointer  whitespace-nowrap"
           >
-            Login
+           Sign in
           </button>
 
           <Link
