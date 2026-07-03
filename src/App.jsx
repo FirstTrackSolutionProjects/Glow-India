@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import SidebarMenu from "./components/SidebarMenu";
+import ScrollToTop from "./components/ScrollToTop";
+import BottomNav from "./components/BottomNav";
 import CurrentProjects from "./Pages/Currentprojects";
 import Newprojects from "./Pages/Newprojects";
 import Mission2030 from "./components/Mission2030";
+import BusinessPlans from "./components/BusinessPlans";
 import Footer from "./components/Footer";
 import Home from "./Pages/Home";
 import PropertyDetails from "./Pages/PropertyDetails";
@@ -31,6 +34,7 @@ function App() {
       <SidebarMenu isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
       
       <div className="min-h-[calc(100vh-64px)] overflow-x-hidden overflow-y-auto flex flex-col bg-white">
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/property/:id" element={<PropertyDetails />} />
@@ -38,6 +42,7 @@ function App() {
         <Route path="/current-projects" element={<CurrentProjects />} />
         <Route path="/new-projects" element={<Newprojects />} />
         <Route path="/mission2030" element={<Mission2030 />} />
+        <Route path="/business-plans" element={<BusinessPlans />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
@@ -52,6 +57,7 @@ function App() {
         <Route path='/verify' element={<Verify/>}></Route>
       </Routes>
       <Footer />
+      <BottomNav />
       </div>
     </>
   );
