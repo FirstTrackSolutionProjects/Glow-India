@@ -17,6 +17,7 @@ const BottomNav = () => {
     { name: "Projects", path: "/current-projects", icon: <FaBuilding /> },
     { name: "Career", path: "/career", icon: <FaBriefcase /> },
     { name: "Contact", path: "/contact", icon: <FaPhoneAlt /> },
+    { name: "Account", path: "/account", icon: <FaUserCircle /> },
   ];
 
   return (
