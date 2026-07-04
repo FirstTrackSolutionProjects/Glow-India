@@ -49,10 +49,12 @@ import { useLocation } from "react-router-dom";
 
 import Slideshow from "../components/Slideshow";
 import Banner from "../components/Banner";
+import OwnerMessage from "../components/OwnerMessage";
 import PropertyList from "../components/PropertyList";
 import Reviews from "../components/Reviews";
 import Glowindia from "../components/Glowindia";
 import Mission from "../components/Mission2030";
+import CurrentProjects from "../Pages/Currentprojects";
 import BusinessPlans from "../components/BusinessPlans";
 import Vision from "../components/Vision";
 import TrustedPartners from "../components/TrustedPartners";
@@ -71,11 +73,13 @@ const Home = () => {
       {showLanding && <Slideshow />}
 
       <Banner />
+      <OwnerMessage />
       <PropertyList />
       <Reviews />
       <Glowindia />
-
+      
       <Mission />
+      <CurrentProjects />
       <BusinessPlans />
 
       <Vision />

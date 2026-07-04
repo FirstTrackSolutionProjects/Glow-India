@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import {
   FaHome,
@@ -6,14 +6,11 @@ import {
   FaBriefcase,
   FaPhoneAlt,
   FaUserCircle,
-  FaTimes,
-  FaUserShield,
-  FaUsers,
 } from "react-icons/fa";
 
 const BottomNav = () => {
   const location = useLocation();
-  const [showLogin, setShowLogin] = useState(false);
+  
 
   const navItems = [
     { name: "Home", path: "/", icon: <FaHome /> },
@@ -59,76 +56,35 @@ const BottomNav = () => {
             })}
 
             {/* Account */}
-            <button
-              onClick={() => setShowLogin(true)}
-              className="flex flex-col items-center flex-1"
-            >
-              <div className="w-11 h-11 rounded-full flex items-center justify-center text-lg text-gray-500 hover:bg-blue-100 hover:text-blue-600 transition-all duration-300">
-                <FaUserCircle />
-              </div>
+            <Link
+  to="/account"
+  className="flex flex-col items-center flex-1"
+>
+  <div
+    className={`w-11 h-11 rounded-full flex items-center justify-center text-lg transition-all duration-300 ${
+      location.pathname === "/account"
+        ? "bg-blue-600 text-white shadow-lg scale-110"
+        : "text-gray-500 hover:bg-blue-100 hover:text-blue-600"
+    }`}
+  >
+    <FaUserCircle />
+  </div>
 
-              <span className="text-[11px] mt-1 font-medium text-gray-500">
-                Account
-              </span>
-            </button>
+  <span
+    className={`text-[11px] mt-1 font-medium ${
+      location.pathname === "/account"
+        ? "text-blue-600"
+        : "text-gray-500"
+    }`}
+  >
+    Account
+  </span>
+</Link>
           </div>
         </div>
       </div>
 
-      {/* Login Modal */}
-      {showLogin && (
-        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex justify-center items-center z-[100] px-5">
-          <div className="bg-white rounded-3xl w-full max-w-sm overflow-hidden shadow-2xl animate-[fadeIn_.3s_ease]">
-
-            {/* Header */}
-            <div className="bg-gradient-to-r from-green-600 to-emerald-500 text-white p-6 relative">
-              <button
-                onClick={() => setShowLogin(false)}
-                className="absolute top-4 right-4 bg-white/20 p-2 rounded-full hover:bg-red-500 transition"
-              >
-                <FaTimes />
-              </button>
-
-              <div className="flex justify-center">
-                <div className="w-20 h-20 rounded-full bg-white/20 flex items-center justify-center">
-                  <FaUserCircle size={42} />
-                </div>
-              </div>
-
-              <h2 className="text-2xl font-bold text-center mt-4">
-                Welcome
-              </h2>
-
-              <p className="text-center text-sm text-green-100 mt-1">
-                Please choose your login type
-              </p>
-            </div>
-
-            {/* Buttons */}
-            <div className="p-6 space-y-4">
-
-              <Link
-                to="/admin-login"
-                onClick={() => setShowLogin(false)}
-                className="flex items-center justify-center gap-3 bg-gradient-to-r from-green-600 to-green-500 hover:scale-105 duration-300 text-white py-4 rounded-xl font-semibold shadow-lg"
-              >
-                <FaUserShield size={20} />
-                Admin Login
-              </Link>
-
-              <Link
-                to="/member-login"
-                onClick={() => setShowLogin(false)}
-                className="flex items-center justify-center gap-3 bg-gradient-to-r from-blue-600 to-cyan-500 hover:scale-105 duration-300 text-white py-4 rounded-xl font-semibold shadow-lg"
-              >
-                <FaUsers size={20} />
-                Member Login
-              </Link>
-
-            </div>
-          </div>
-        </div>
-      )}
+  
     </>
   );
 };
