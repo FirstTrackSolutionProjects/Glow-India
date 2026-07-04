@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import SidebarMenu from "./components/SidebarMenu";
 import ScrollToTop from "./components/ScrollToTop";
 import BottomNav from "./components/BottomNav";
-import Account from "./pages/Account";
+import Account from "./Pages/Account";
 import CurrentProjects from "./Pages/Currentprojects";
 import Newprojects from "./Pages/Newprojects";
 import Mission2030 from "./components/Mission2030";
