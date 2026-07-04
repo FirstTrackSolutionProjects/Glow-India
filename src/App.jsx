@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import SidebarMenu from "./components/SidebarMenu";
 import ScrollToTop from "./components/ScrollToTop";
 import BottomNav from "./components/BottomNav";
+import Account from "./Pages/Account";
 import CurrentProjects from "./Pages/Currentprojects";
 import Newprojects from "./Pages/Newprojects";
 import Mission2030 from "./components/Mission2030";
@@ -54,6 +55,7 @@ function App() {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/past-event" element={<PastEventsPage />} /> 
         <Route path="/upcoming-event" element={<UpcomingeventsPage />} />
+        <Route path="/account" element={<Account />} />
         <Route path='/verify' element={<Verify/>}></Route>
       </Routes>
       <Footer />
