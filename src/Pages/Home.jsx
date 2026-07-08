@@ -54,6 +54,7 @@ import PropertyList from "../components/PropertyList";
 import Reviews from "../components/Reviews";
 import Glowindia from "../components/Glowindia";
 import Mission from "../components/Mission2030";
+import Rewards from "../Pages/Rewards";
 import CurrentProjects from "../Pages/Currentprojects";
 import BusinessPlans from "../components/BusinessPlans";
 import Vision from "../components/Vision";
@@ -78,6 +79,7 @@ const Home = () => {
       <Reviews />
       <Glowindia />
       
+      <Rewards />
       <Mission />
       <CurrentProjects />
       <BusinessPlans />

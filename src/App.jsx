@@ -5,6 +5,7 @@ import SidebarMenu from "./components/SidebarMenu";
 import ScrollToTop from "./components/ScrollToTop";
 import BottomNav from "./components/BottomNav";
 import Account from "./Pages/Account";
+import Rewards from "./Pages/Rewards";
 import CurrentProjects from "./Pages/Currentprojects";
 import Newprojects from "./Pages/Newprojects";
 import Mission2030 from "./components/Mission2030";
@@ -25,6 +26,7 @@ import PastEventsPage from "./Pages/Pastevents";
 import UpcomingeventsPage  from "./Pages/upcomingevents";
 import Verify from "./Pages/Verify";
 
+
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
@@ -44,6 +46,7 @@ function App() {
         <Route path="/new-projects" element={<Newprojects />} />
         <Route path="/mission2030" element={<Mission2030 />} />
         <Route path="/business-plans" element={<BusinessPlans />} />
+        <Route path="/rewards" element={<Rewards />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
