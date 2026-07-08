@@ -87,42 +87,42 @@ export default function CurrentProjects() {
   const projects = [
     {
       name: "Chilika (Cottage)",
-      status: "SOLD OUT",
+      // status: "SOLD OUT",
       price: "₹75,00,000",
       details: "2 Units • Lake View Cottage",
-      image: "/cottage 2nd room.jpg",
+      image: "/Chilika (Cottage).jpg",
     },
     {
       name: "Tarota",
       price: "₹1,350 / Sq ft",
       details: "1 Unit = 1200 Sq ft",
-      image: "/plot 1.jpg",
+      image: "/Tarotas.jpg",
     },
     {
       name: "Bhola (Chandaka) — Farm House",
-      status: "SOLD OUT",
+      // status: "SOLD OUT",
       price: "₹1,800 / Sq ft",
       details: "1 Unit = 1200 Sq ft",
-      image: "/plot 10.jpg",
+      image: "/Tarotas.jpg",
     },
     {
       name: "Duplex",
       price: "₹55,00,000",
       details: "Modern Duplex House",
-      image: "/plot 11.jpg",
+      image: "/Malatipatapur.jpg",
     },
     {
       name: "Residential Plot",
-      status: "SOLD OUT",
+      // status: "SOLD OUT",
       price: "₹1,450 / Sq ft",
       details: "Near Nakhara, Cuttack",
-      image: "/plot 1.jpg",
+      image: "/Mandarabasta.jpg",
     },
     {
       name: "Shree Vihar",
       price: "₹2,100 / Sq ft",
       details: "Near Maltipatpur Bus Stop, Puri",
-      image: "/shreevihar-1.jpg",
+      image: "/Mandarabasta.jpg",
     },
   ];
 

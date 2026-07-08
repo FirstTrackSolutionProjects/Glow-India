@@ -5,6 +5,11 @@ const Account = () => {
   return (
     <div className="min-h-screen bg-gray-100 flex justify-center items-center px-5">
       <div className="bg-white rounded-3xl shadow-2xl w-full max-w-md overflow-hidden">
+      <img
+          src="/assets/login.jpg"
+          alt="Login"
+          className="w-full h-52 object-cover"
+        />
 
         {/* Header */}
         <div className="bg-gradient-to-r from-green-600 to-emerald-500 text-white p-8 text-center">
